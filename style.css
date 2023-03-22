@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.corpo{
+    background-image: url(imagens/background-body.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.menu{
+    background-color: powderblue;
+    list-style: none;
+    display: flex;  
+}
+
+.item_menu{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px;
+    transition-delay: 50ms;
+}
+
+.item_menu:hover{
+    background-color: rgb(96, 211, 226);
+}
+
+.texto{
+    font-family: 'Shantell Sans', cursive;
+    float: right;
+    font-size: 25px;
+    padding: 130px 15px;
+
+}
+
+.maga{
+    padding: 130px 0px;
+    transition: transform 1500ms;
+
+}
+
+.maga:hover{
+  transform: rotate(360deg);
+}
+
+.robo{
+    margin-top: 50px;
+    float: right;
+}
+
+@media (max-width: 1300px){
+    .corpo{
+        background-image: url(imagens/background-none.png);
+    }
+
+}

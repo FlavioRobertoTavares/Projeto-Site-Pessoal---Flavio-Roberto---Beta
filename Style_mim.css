@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Shantell Sans', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(192, 240, 224);
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    background-color: powderblue;
+    list-style: none;
+    display: flex;  
+}
+
+.item_menu{
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px;
+    transition-delay: 50ms;
+}
+
+.item_menu:hover{
+    background-color: rgb(96, 211, 226);
+}
+
+.lista{
+    list-style: none;
+}
+
+.eu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.imagem1{
+    border-radius: 20px;
+    border: 5px solid whitesmoke;
+}
+
+.texto_eu{
+    font-size: clamp(15px, 1.15vw, 23px);
+    margin-left: 1vw;
+    border-radius: 20px;
+    border: 5px solid whitesmoke;
+}
+
+.dog{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.imagem2{
+    border-radius: 20px;
+    border: 5px solid rgb(249, 209, 247);
+}
+
+.texto_dog{
+    font-size: clamp(15px, 1.2vw, 23px);
+    margin-right: 1vw;
+    border-radius: 20px;
+    border: 5px solid rgb(249, 209, 247);
+}
+
+.livro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.imagem3{
+    border-radius: 20px;
+    border: 5px solid rgb(142, 213, 251);
+}
+
+.texto_livro{
+    font-size: clamp(15px, 1.25vw, 23px);
+    margin-left: 1vw;
+    border-radius: 20px;
+    border: 5px solid rgb(142, 213, 251);
+}
+
+.icones{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+}
+
+.icone{
+    padding: 0.5vw;
+    transition: transform 1500ms;
+}
+
+.icone:hover{
+    transform: rotate(360deg);
+}
+
+@media (max-width: 700px) {
+    .eu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem1{
+        height: 30vh;
+        width: 30vw;
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .texto_eu{
+        margin-top: 2vh;
+    }
+
+    .dog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem2{
+        height: 30vh;
+        width: 30vw;
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .texto_dog{
+        margin-top: 2vh;
+    }
+
+    .livro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem3{
+        height: 30vh;
+        width: 30vw;
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .texto_livro{
+        margin-top: 2vh;
+    }
+
+}
